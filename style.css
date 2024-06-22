@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.container .card {
+	width: 500px;
+	margin: 50px;
+	padding: 50px;
+	border: 1px solid red;
+}
+
+.progress-bar {
+	width: 100%;
+	height: 30px;
+	background-color: rgb(207, 207, 207);
+	border-radius: 50px;
+}
+.progress-value {
+	text-align: center;
+	height: 100%;
+	width: 0;
+	background-color: green;
+	overflow: hidden;
+	border-radius: 16px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: width 0.5s ease-in-out;
+}
+.quotes{
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgb(119, 119, 118);
+}
+
+.error-label {
+	font-weight: 300;
+	font-size: 12px;
+	color: red;
+}
+
+.input-wrapper {
+	width: 100%;
+	display: flex;
+	gap: 15px;
+	margin: 20px 0;
+	padding: 20px;
+	border-radius: 4px;
+	box-shadow: 1px 1px 11px 3px rgb(211, 211, 211);
+}
+.custom-checkbox {
+	width: 20px;
+	height: 20px;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.custom-checkbox svg {
+	display: none;
+}
+.input-wrapper .input-field {
+	border: unset;
+	width: 80%;
+}
+.input-wrapper .input-field:focus {
+	border: unset;
+	outline: none;
+}
+.input-wrapper .input-field:visited {
+	border: unset;
+}
+.complted-routine .custom-checkbox {
+	background-color: rgb(11, 221, 11);
+}
+.complted-routine .custom-checkbox svg {
+	display: inline-block !important;
+}
+.complted-routine .input-field {
+	text-decoration: line-through;
+	color: rgb(95, 190, 1);
+	font-weight: 600;
+}
+
+.error-label {
+	display: none;
+}
+#routineAddbtn{
+    background-color: #4CAF50;
+    padding: 8px 20px;
+    border: 1px solid turquoise;
+    text-align: center;
+    border-radius:4px ;
+    color: #fff;
+}
